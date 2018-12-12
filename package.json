@@ -1,0 +1,38 @@
+{
+  "name": "react-tao",
+  "version": "0.1.0",
+  "description": "react淘票票",
+  "private": true,
+  "dependencies": {
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-scripts-ts": "3.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.10",
+    "@types/node": "^10.12.12",
+    "@types/react": "^16.7.13",
+    "@types/react-dom": "^16.0.11",
+    "typescript": "^3.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dingwufu/react-tao.git"
+  },
+  "keywords": [
+    "react",
+    "typescript"
+  ],
+  "author": "dingwufu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dingwufu/react-tao/issues"
+  },
+  "homepage": "https://github.com/dingwufu/react-tao#readme"
+}
