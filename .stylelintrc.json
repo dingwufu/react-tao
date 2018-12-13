@@ -1,0 +1,9 @@
+{
+  "extends": ["stylelint-config-standard"],
+  "plugins": ["stylelint-scss"],
+  "rules": {
+    "selector-list-comma-newline-after": "always-multi-line",
+    "rule-empty-line-before": null,
+    "no-descending-specificity": null
+  }
+}
