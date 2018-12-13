@@ -2,6 +2,7 @@
 
 #### 项目介绍
 仿淘票票APP的H5项目
+访问地址：[https://dingwufu.github.io/react-tao/](https://dingwufu.github.io/react-tao/)
 
 #### 软件架构
 基于create-react-app搭建。技术栈为 react + typescript,使用mockjs构建dev数据。

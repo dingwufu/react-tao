@@ -58,13 +58,16 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
-    "precommit": "tslint src/*.tsx && stylelint src/*.scss"
+    "precommit": "tslint src/*.tsx && stylelint src/*.scss",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "@types/jest": "^23.3.10",
     "@types/node": "^10.12.12",
     "@types/react": "^16.7.13",
     "@types/react-dom": "^16.0.11",
+    "gh-pages": "^2.0.1",
     "typescript": "^3.2.2"
   },
   "repository": {
