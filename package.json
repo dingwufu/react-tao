@@ -80,7 +80,7 @@
   "bugs": {
     "url": "https://github.com/dingwufu/react-tao/issues"
   },
-  "homepage": "https://github.com/dingwufu/react-tao#readme",
+  "homepage": "https://dingwufu.github.io/react-tao/",
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,ts,tsx}",
