@@ -1,0 +1,42 @@
+.poster-slide {
+  height: 100%;
+  overflow: hidden;
+
+  .img {
+    width: 100%;
+    height: 100%;
+  }
+  .dots {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 20px;
+
+    li {
+      display: inline-block;
+      list-style: none;
+      width: 8px;
+      height: 8px;
+      &:nth-child(n + 2) {
+        margin-left: 10px;
+      }
+
+      &.slick-active button {
+        background-color: #fff;
+      }
+      button {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        color: transparent;
+        -webkit-appearance: none;
+        outline: none;
+        border: none;
+        background-color: rgba(#fff, 0.5);
+      }
+    }
+  }
+}

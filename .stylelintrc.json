@@ -1,8 +1,15 @@
 {
-  "extends": "stylelint-config-standard",
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-recommended-scss"
+  ],
+  "plugins": [
+    "stylelint-scss"
+  ],
   "rules": {
     "selector-list-comma-newline-after": "always-multi-line",
     "rule-empty-line-before": null,
-    "no-descending-specificity": null
+    "no-descending-specificity": null,
+    "scss/at-mixin-argumentless-call-parentheses": "always"
   }
 }

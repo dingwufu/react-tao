@@ -1,0 +1,8 @@
+$black: #000;
+$gray: #777;
+$border-color: #e4e2e2;
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+}

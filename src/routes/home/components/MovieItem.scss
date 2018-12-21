@@ -1,0 +1,71 @@
+@import "~/assets/css/_util.scss";
+.movie-item {
+  display: flex;
+  padding: 15px 0;
+  &:nth-child(n + 2) {
+    border-top: 1px solid $border-color;
+  }
+
+  .poster {
+    width: 66px;
+    height: 96px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .detail {
+    flex: 1;
+    margin: 0 11px;
+  }
+
+  .name {
+    color: $black;
+    font-size: 17px;
+    line-height: 1.4;
+    font-weight: 600;
+  }
+
+  .score {
+    color: #333;
+    font-size: 10px;
+    margin-top: 7px;
+
+    span {
+      font-weight: bold;
+      color: #ffa54b;
+      margin-left: 4px;
+      font-size: 14px;
+    }
+  }
+
+  .actor,
+  .director {
+    color: $gray;
+    font-size: 13px;
+  }
+  .director {
+    margin-top: 10px;
+  }
+  .actor {
+    margin-top: 7px;
+  }
+  .tag {
+    margin-top: 8px;
+  }
+
+  .btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .price {
+      color: $gray;
+      font-size: 10px;
+      margin-top: 4px;
+    }
+  }
+}

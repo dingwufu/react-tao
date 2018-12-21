@@ -5,7 +5,7 @@
 访问地址：[https://dingwufu.github.io/react-tao/](https://dingwufu.github.io/react-tao/)
 
 #### 软件架构
-基于create-react-app搭建。技术栈为 react + typescript,使用mockjs构建dev数据。
+基于create-react-app搭建。技术栈为 react + typescript + scss。
 
 #### 安装教程
 ```bash
@@ -23,6 +23,9 @@ npm install
 
 # 运行本地环境
 npm run start
+
+# 发布项目
+npm run deploy
 ```
 
 #### 代码规范

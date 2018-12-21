@@ -1,0 +1,33 @@
+.t-tag {
+  display: inline-block;
+  padding: 2px 4px;
+  font-size: 12px;
+  line-height: 14px;
+  height: 14px;
+  border-radius: 4px;
+
+  &:nth-child(n + 2) {
+    margin-left: 6px;
+  }
+
+  &-red {
+    color: #ef6a79;
+    border: 1px solid #ef6a79;
+  }
+  &-blue {
+    color: #58a4e8;
+    border: 1px solid #58a4e8;
+  }
+}
+
+.t-btn {
+  width: 51px;
+  height: 29px;
+  line-height: 27px;
+  border-radius: 14px;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  background-color: #ef6a79;
+  border: none;
+}
