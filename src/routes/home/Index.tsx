@@ -24,9 +24,13 @@ class Home extends React.Component {
             <Slide data={this.slideList}/>
           </div>
         </div>
-        <div className="home-content">
-          <MovieItem />
-        </div>
+        <ul className="home-content">
+          <li><MovieItem /></li>
+          <li><MovieItem /></li>
+          <li><MovieItem /></li>
+          <li><MovieItem /></li>
+          <li><MovieItem /></li>
+        </ul>
       </div>
     );
   }
