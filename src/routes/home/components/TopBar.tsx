@@ -3,13 +3,13 @@ import './TopBar.scss';
 
 interface TopBar {
   title: string,
-  onShowCityLayer: () => void
+  onSetCityLayer: () => void
 }
 
-const TopBar = ({title, onShowCityLayer}: TopBar) => {
+const TopBar = ({title, onSetCityLayer}: TopBar) => {
   return (
     <div className="topBar">
-      <div className="city" onClick={onShowCityLayer}>{title}</div>
+      <div className="city" onClick={onSetCityLayer}>{title}</div>
       <div className="search" />
       <div className="scan" />
     </div>

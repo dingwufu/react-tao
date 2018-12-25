@@ -1,21 +1,39 @@
 import * as React from 'react';
 import './MovieItem.scss';
+interface MovieItem {
+  actor?: string,
+  description: string,
+  director: string,
+  name: string,
+  poster: string,
+  score: number,
+  tags?: Array<string>
+}
 
-const MovieItem = () => {
+const MovieItem = ({actor, description, director, name, poster, score, tags}: MovieItem) => {
   return (
     <div className="movie-item">
       <div className="poster">
-        <img src="./source/movie/asset1.jpeg" alt=""/>
+        <img src={poster} alt=""/>
       </div>
       <div className="detail">
-        <div className="name">神秘巨星</div>
-        <div className="score">观众评分<span>9.33</span></div>
-        <div className="director">导演：张易谋</div>
-        <div className="actor">主演：周杰伦</div>
-        <div className="tag">
-          <div className="t-tag t-tag-red">今日最热</div>
-          <div className="t-tag t-tag-blue">口碑最佳</div>
-        </div>
+        <div className="name">{name}</div>
+        <div className="score">观众评分<span>{score}</span></div>
+        <div className="director">导演：{director}</div>
+        {actor && <div className="actor">主演：{actor}</div>}
+        {tags && <div className="tag">
+          {tags.map((tag, index) => {
+            let classColor = index % 2 ? 'red' : 'blue';
+            return (
+              <div
+                key={tag}
+                className={`t-tag t-tag-${classColor}`}
+              >
+                {tag}
+              </div>
+            );
+          })}
+        </div>}
       </div>
       <div className="btn">
         <button className="t-btn">购票</button>

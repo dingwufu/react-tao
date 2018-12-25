@@ -1,5 +1,7 @@
 @import '~/assets/css/_util.scss';
-
+.tab-menu-container {
+  height: 49px;
+}
 .tab-menu {
   display: flex;
   position: fixed;

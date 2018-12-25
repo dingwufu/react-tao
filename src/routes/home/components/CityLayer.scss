@@ -47,11 +47,10 @@
       }
       .wrap {
         display: flex;
-        justify-content: space-between;
         flex-wrap: wrap;
         list-style: none;
         padding: 10px 15px;
-        margin: 0;
+        margin-left: -12px;
       }
       .item {
         width: 116px;
@@ -60,6 +59,7 @@
         background-color: #fff;
         color: #999;
         margin-bottom: 10px;
+        margin-left: 12px;
         text-align: center;
       }
     }

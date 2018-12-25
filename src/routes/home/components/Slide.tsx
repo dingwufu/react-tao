@@ -5,7 +5,7 @@ import './Slide.scss';
 
 interface PosterSlide {
   data: Array<{
-    img: string
+    image: string
   }>
 }
 
@@ -18,9 +18,9 @@ const PosterSlide = ({data}: PosterSlide) => {
   };
   return (
     <Slider {...settings}>
-      {data.map(({img}, index) => (
-        <div key={index}>
-          <img className="img" src={img} alt=""/>
+      {data.map(({image}, index) => (
+        <div key={image}>
+          <img className="img" src={image} alt=""/>
         </div>
       ))}
     </Slider>
