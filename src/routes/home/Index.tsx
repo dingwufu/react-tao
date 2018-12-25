@@ -2,6 +2,11 @@ import * as React from 'react';
 import TopBar from './components/TopBar';
 import Slide from './components/Slide';
 import MovieItem from './components/MovieItem';
+import CityLayer from './components/CityLayer';
+
+import TabMenu from '../../components/TabMenu';
+import Modal from '../../components/Modal';
+
 import './Index.scss';
 
 class Home extends React.Component {
@@ -31,6 +36,10 @@ class Home extends React.Component {
           <li><MovieItem /></li>
           <li><MovieItem /></li>
         </ul>
+        <TabMenu current={'movie'}/>
+        <Modal>
+          <CityLayer />
+        </Modal>
       </div>
     );
   }

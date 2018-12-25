@@ -9,7 +9,6 @@
   "rules": {
     "selector-list-comma-newline-after": "always-multi-line",
     "rule-empty-line-before": null,
-    "no-descending-specificity": null,
-    "scss/at-mixin-argumentless-call-parentheses": "always"
+    "no-descending-specificity": null
   }
 }
