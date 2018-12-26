@@ -31,3 +31,22 @@
   background-color: #ef6a79;
   border: none;
 }
+
+.t-operator {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  line-height: 40px;
+
+  .icon {
+    width: 40px;
+    height: 40px;
+
+    &.icon-setting {
+      background: transparent url('../icons/setting.svg') left / 20px 20px no-repeat;
+    }
+    &.icon-message {
+      background: transparent url('../icons/message.svg') right / 20px 20px no-repeat;
+    }
+  }
+}

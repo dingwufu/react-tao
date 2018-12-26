@@ -11,10 +11,8 @@ export default async function (path: string, opt?: Object) {
       return data;
     } else {
       // 错误处理
-      console.log('error');
     }
   } catch (error) {
     // 错误处理
-    console.log('error');
   }
 }

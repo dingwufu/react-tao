@@ -41,7 +41,6 @@ class Home extends React.Component {
   }
   render() {
     const { city, poster, movie, cityLayerVisible } = this.state;
-    console.log(cityLayerVisible);
     return (
       <div className="home">
         <TopBar title={city} onSetCityLayer={this.onSetCityLayer}/>
