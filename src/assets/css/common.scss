@@ -48,5 +48,11 @@
     &.icon-message {
       background: transparent url('../icons/message.svg') right / 20px 20px no-repeat;
     }
+    &.icon-back {
+      background: transparent url('../icons/back.svg') left / 20px 20px no-repeat;
+    }
+    &.icon-share {
+      background: transparent url('../icons/share.svg') right / 20px 20px no-repeat;
+    }
   }
 }

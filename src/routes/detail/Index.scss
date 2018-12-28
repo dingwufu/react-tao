@@ -1,0 +1,19 @@
+@import '~/assets/css/_util.scss';
+.detail {
+  & > .top {
+    background-color: #d4b269;
+    padding: 0 20px;
+  }
+
+  & > .content {
+    padding: 0 20px;
+
+    .module {
+      padding: 20px 0;
+
+      &:nth-child(n + 2) {
+        border-top: 1px solid $border-color;
+      }
+    }
+  }
+}
