@@ -7,11 +7,8 @@ interface P {
   children ?: React.ReactNode,
 }
 
-interface Modal {
-  el: HTMLElement
-}
-
 class Modal extends React.Component<P> {
+  private el: HTMLDivElement;
   constructor(props: P) {
     super(props);
     this.el = document.createElement('div');

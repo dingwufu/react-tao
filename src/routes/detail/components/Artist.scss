@@ -1,0 +1,47 @@
+@import '~/assets/css/_util.scss';
+.artist {
+  .list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-right: -20px;
+    -webkit-overflow-scrolling: touch; // ios滚动优化
+
+    li:nth-child(n + 2) {
+      margin-left: 6px;
+    }
+    li:last-child {
+      padding-right: 20px;
+    }
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .info {
+    width: 80px;
+    height: 110px;
+    background-color: #ccc;
+    text-align: center;
+    text-decoration: none;
+
+    .image {
+      width: 80px;
+      height: 110px;
+      background-color: #ccc;
+      background-size: cover;
+    }
+    .name {
+      font-size: 14px;
+      color: $black;
+    }
+    .job {
+      font-size: 12px;
+      color: $gray;
+      margin: 0;
+    }
+  }
+}

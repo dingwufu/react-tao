@@ -14,6 +14,18 @@
       &:nth-child(n + 2) {
         border-top: 1px solid $border-color;
       }
+
+      .overview {
+        color: #333;
+        line-height: 28px;
+        font-size: 14px;
+      }
+
+      .module-title {
+        font-size: 16px;
+        font-weight: bold;
+        margin: 0;
+      }
     }
   }
 }
