@@ -1,7 +1,10 @@
 import * as React from 'react';
 import './BaseInfo.scss';
 
-const BaseInfo = () => {
+interface P {
+  onShowImage: () => void
+}
+const BaseInfo = ({ onShowImage }: P) => {
   return (
     <div className="base-info">
       <div className="detail">
@@ -11,7 +14,7 @@ const BaseInfo = () => {
         <div className="other">中欧大陆 | 20分钟</div>
         <div className="other">2018年2月上映</div>
       </div>
-      <div className="poster" style={{ backgroundImage: 'url(/source/movie/asset4.jpeg)', }} />
+      <div className="poster" style={{ backgroundImage: 'url(/source/movie/asset4.jpeg)', }} onClick={onShowImage} />
     </div>
   );
 };

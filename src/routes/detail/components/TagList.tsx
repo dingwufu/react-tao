@@ -1,18 +1,23 @@
 import * as React from 'react';
 import './TagList.scss';
 
-const TagList = () => {
+interface P {
+  data: Array<{
+    text: string,
+    count: string | number
+  }>,
+  current: string,
+  onClick: (value: string) => void
+}
+const TagList = ({data, current, onClick}: P) => {
+  const onClickTag = (value: string) => {
+    if (value !== current) {
+      onClick(value);
+    }
+  };
   return (
     <div className="taglist">
-      <span className="item">热门</span>
-      <span className="item active">好评 12340</span>
-      <span className="item">好评 12340</span>
-      <span className="item">好评 12340</span>
-      <span className="item">好评 12340</span>
-      <span className="item">好评 12340</span>
-      <span className="item">好评 12340</span>
-      <span className="item">好评 12340</span>
-      <span className="item active">最新</span>
+      {data.map(({text, count}) => <span key={text} className={`item ${current === text && 'active'} `} onClick={() => onClickTag(text)}>{text} {count}</span>)}
     </div>
   );
 };

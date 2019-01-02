@@ -15,6 +15,7 @@
       height: 50px;
       background-color: #ccc;
       border-radius: 50px;
+      background-size: cover;
     }
 
     & > .user-detail {
@@ -61,7 +62,7 @@
       height: 14px;
       display: inline-block;
       vertical-align: -2px;
-      background: #fff url("../../../assets/icons/zan-o.svg") 50% / cover no-repeat;
+      background: #fff url("../../../assets/icons/zan-o.svg") 50% / contain no-repeat;
     }
     .zan.active i {
       background-image: url("../../../assets/icons/zan-solid.svg");

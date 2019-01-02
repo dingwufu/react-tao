@@ -4,7 +4,7 @@ import './ListItem.scss';
 interface ListItem {
   href: string,
   title: string,
-  extra: string
+  extra?: string
 }
 
 const ListItem = ({href, title, extra}: ListItem) => {

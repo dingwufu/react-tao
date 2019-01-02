@@ -1,5 +1,7 @@
 @import '~/assets/css/_util.scss';
 .detail {
+  padding-bottom: 55px;
+
   & > .top {
     background-color: #d4b269;
     padding: 0 20px;
@@ -27,5 +29,16 @@
         margin: 0 0 16px;
       }
     }
+  }
+  .btn.buy {
+    position: fixed;
+    height: 55px;
+    line-height: 55px;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    background-color: $active;
+    bottom: 0;
+    text-decoration: none;
   }
 }

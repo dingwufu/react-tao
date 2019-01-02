@@ -3,79 +3,45 @@ import Star from '../../../components/Star';
 import CollapsiblePara from '../../../components/CollapsiblePara';
 
 import './CommentList.scss';
-
-const CommentList = () => {
+interface P {
+  data: Array<{
+    id: string,
+    name: string,
+    score: number,
+    content: string,
+    time: string,
+    isZan: boolean,
+    zan: number | string,
+  }>,
+  onClickZan: (id: string) => void,
+}
+const CommentList = ({data, onClickZan}: P) => {
   return (
     <ul className="comment-list">
-      <li className="comment-item">
-        <div className="comment-user">
-          <div className="avatar" style={{ backgroundImage: 'url("")', }} />
-          <div className="user-detail">
-            <div className="name">jack ma</div>
-            <div className="score">
-              <Star value={5} />
-              <span className="value">9.3</span>
+      {data.map(({id, name, score, content, time, isZan, zan}) => (
+        <li key={id} className="comment-item">
+          <div className="comment-user">
+            <div className="avatar" style={{ backgroundImage: 'url(/source/default-avatar.jpg)', }} />
+            <div className="user-detail">
+              <div className="name">{name}</div>
+              <div className="score">
+                <Star value={score} />
+                <span className="value">{score}</span>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="comment-content">
-          <CollapsiblePara height={72} lineHeight={'24px'}>
-            哇卡死了达拉斯，武切维奇匹配。哇卡死了达拉斯，武切维奇匹配。哇卡死了达拉斯，武切维奇匹配。哇卡死了达拉斯，武切维奇匹配。哇卡死了达拉斯，武切维奇匹配。哇卡死了达拉斯，武切维奇匹配。哇卡死了达拉斯，武切维奇匹配。哇卡死了达拉斯，武切维奇匹配。哇卡死了达拉斯，武切维奇匹配。哇卡死了达拉斯，武切维奇匹配。哇卡死了达拉斯，武切维奇匹配。
-          </CollapsiblePara>
-        </div>
-        <div className="comment-detail">
-          <div className="time">01-28 16:30</div>
-          <div className="zan active">
-            <i/> 2411
+          <div className="comment-content">
+            <CollapsiblePara height={72} lineHeight={'24px'}>{content}
+            </CollapsiblePara>
           </div>
-        </div>
-      </li>
-      <li className="comment-item">
-        <div className="comment-user">
-          <div className="avatar" style={{ backgroundImage: 'url("")', }} />
-          <div className="user-detail">
-            <div className="name">jack ma</div>
-            <div className="score">
-              <Star value={5} />
-              <span className="value">9.3</span>
+          <div className="comment-detail">
+            <div className="time">{time}</div>
+            <div className={`zan ${isZan && 'active'}`}  onClick={() => onClickZan(id)}>
+              <i/> {zan}
             </div>
           </div>
-        </div>
-        <div className="comment-content">
-          <CollapsiblePara height={72} lineHeight={'24px'}>
-            哇卡死了达拉斯，武切维奇匹配。哇卡死了达拉斯，武切维奇匹配。哇卡死了达拉斯，武切维奇匹配。哇卡死了达拉斯，武切维奇匹配。哇卡死了达拉斯，武切维奇匹配。哇卡死了达拉斯，武切维奇匹配。哇卡死了达拉斯，武切维奇匹配。哇卡死了达拉斯，武切维奇匹配。哇卡死了达拉斯，武切维奇匹配。哇卡死了达拉斯，武切维奇匹配。哇卡死了达拉斯，武切维奇匹配。
-          </CollapsiblePara>
-        </div>
-        <div className="comment-detail">
-          <div className="time">01-28 16:30</div>
-          <div className="zan active">
-            <i/> 2411
-          </div>
-        </div>
-      </li>
-      <li className="comment-item">
-        <div className="comment-user">
-          <div className="avatar" style={{ backgroundImage: 'url("")', }} />
-          <div className="user-detail">
-            <div className="name">jack ma</div>
-            <div className="score">
-              <Star value={5} />
-              <span className="value">9.3</span>
-            </div>
-          </div>
-        </div>
-        <div className="comment-content">
-          <CollapsiblePara height={72} lineHeight={'24px'}>
-            哇卡死了达拉斯，武切维奇匹配。哇卡死了达拉斯，武切维奇匹配。哇卡死了达拉斯，武切维奇匹配。哇卡死了达拉斯，武切维奇匹配。哇卡死了达拉斯，武切维奇匹配。哇卡死了达拉斯，武切维奇匹配。哇卡死了达拉斯，武切维奇匹配。哇卡死了达拉斯，武切维奇匹配。哇卡死了达拉斯，武切维奇匹配。哇卡死了达拉斯，武切维奇匹配。哇卡死了达拉斯，武切维奇匹配。
-          </CollapsiblePara>
-        </div>
-        <div className="comment-detail">
-          <div className="time">01-28 16:30</div>
-          <div className="zan active">
-            <i/> 2411
-          </div>
-        </div>
-      </li>
+        </li>
+      ))}
     </ul>
   );
 };

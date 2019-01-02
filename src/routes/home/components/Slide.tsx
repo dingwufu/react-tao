@@ -12,7 +12,7 @@ interface PosterSlide {
 const PosterSlide = ({data}: PosterSlide) => {
   let settings = {
     dots: true,
-    autoplay: true,
+    // autoplay: true,
     className: 'poster-slide',
     dotsClass: 'dots'
   };
