@@ -3,6 +3,7 @@ import BaseInfo from './components/BaseInfo';
 import ScoreSummary from './components/ScoreSummary';
 import CollapsiblePara from '../../components/CollapsiblePara';
 import Artist from './components/Artist';
+import Comment from './container/Comment';
 
 import request from '../../helpers/request';
 import './Index.scss';
@@ -47,6 +48,10 @@ class Detail extends React.Component {
           <div className="module">
             <h3 className="module-title">演职人员</h3>
             <Artist data={this.state.artist}/>
+          </div>
+          <div className="module">
+            <h3 className="module-title">观众热评</h3>
+            <Comment />
           </div>
         </div>
       </div>

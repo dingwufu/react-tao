@@ -3,6 +3,7 @@ import './CollapsiblePara.scss';
 
 interface CPProps extends React.Props<CPProps> {
   height?: number,
+  lineHeight?: number | string,
 }
 interface CPState {
   isCollapse: boolean,
@@ -41,6 +42,7 @@ class CollapsiblePara extends React.Component<CPProps, CPState> {
   }
   render() {
     const { isCollapse, isNeedCollapse } = this.state;
+    const { lineHeight } = this.props;
     const collapseStyle = isCollapse ? {
       maxHeight: this.props.height,
       overflow: 'hidden',
@@ -49,12 +51,13 @@ class CollapsiblePara extends React.Component<CPProps, CPState> {
     return (
       <div className={'collapsible-para'} ref={this.myRef} onClick={this.toggleState} style={collapseStyle}>
         {this.props.children}
-        {isNeedCollapse && <div className="label">{collapseText}</div>}
+        {isNeedCollapse && <div className="label" style={{ lineHeight, }}>{collapseText}</div>}
       </div>
     );
   }
 }
 CollapsiblePara.defaultProps = {
-  height: 84
+  height: 84,
+  lineHeight: '28px',
 };
 export default CollapsiblePara;
