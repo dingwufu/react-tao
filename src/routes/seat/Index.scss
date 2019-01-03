@@ -1,0 +1,26 @@
+@import "~/assets/css/_util.scss";
+.seat {
+  .t-operator {
+    padding: 0 20px;
+  }
+  .seat-main {
+    .tip {
+      height: 30px;
+      padding: 10px 0;
+      background: #fff url("../../assets/icons/seats.svg") 50% 50% / auto 30px no-repeat;
+    }
+    .graph {
+      background-color: #f7f7f7;
+      width: 100%;
+      height: 500px;
+    }
+    .screen {
+      font-size: 14px;
+      height: 28px;
+      line-height: 28px;
+      color: $black;
+      text-align: center;
+      background: transparent url("../../assets/icons/screen.svg") 50% 0 / auto 28px no-repeat;
+    }
+  }
+}
