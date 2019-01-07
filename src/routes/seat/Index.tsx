@@ -30,7 +30,7 @@ class Index extends React.Component<P, S> {
       <Provider store={store}>
         <div className="seat">
           <div className="t-operator">
-            <i className="icon icon-back-black" />
+            <i className="icon icon-back-black"  onClick={() => window.history.back()}/>
             万达影院
             <i className="icon icon-share-black"/>
           </div>

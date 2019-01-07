@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 import TopBar from './components/TopBar';
 import Slide from './components/Slide';
 import MovieItem from './components/MovieItem';
@@ -53,7 +54,9 @@ class Home extends React.Component {
           {movie.map((item) => {
             let {name} = item;
             return (
-              <li key={name}><MovieItem {...item} /></li>
+              <li key={name}>
+                <Link to="/detail"><MovieItem {...item} /></Link>
+              </li>
             );
           })}
         </ul>

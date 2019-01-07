@@ -40,10 +40,10 @@ class Detail extends React.Component<P, S> {
   }
   render() {
     return (
-      <div className="detail">
+      <div className="movie-detail">
         <div className="top">
           <div className="t-operator">
-            <i className="icon icon-back" />
+            <i className="icon icon-back" onClick={() => window.history.back()}/>
             <i className="icon icon-share" />
           </div>
           <BaseInfo onShowImage={this.toggleImage}/>

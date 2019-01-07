@@ -50,9 +50,13 @@
     }
     &.icon-back {
       background: transparent url('../icons/back.svg') left / 20px 20px no-repeat;
+      background-position-x: -5px;
+      background-size: 18px;
     }
     &.icon-back-black {
       background: transparent url('../icons/back-black.svg') left / 20px 20px no-repeat;
+      background-position-x: -5px;
+      background-size: 18px;
     }
     &.icon-share-black {
       background: transparent url('../icons/share-black.svg') right / 20px 20px no-repeat;
