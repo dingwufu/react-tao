@@ -1,21 +1,13 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
+import { ISeat } from '../interface';
 import { addSeat, removeSeat } from '../actions';
 import { data } from '../mock/seat.json';
 
-type Seat = {
-  id: string;
-  counter: number;
-  colIndex: number;
-  xPos: number;
-  isSold: boolean;
-  rowIndex: number;
-  yPos: number;
-};
 interface P {
   selectedSeat: Array<any>,
   onRemove: (id: string) => void,
-  onAdd: (seat: Seat) => void,
+  onAdd: (seat: ISeat) => void,
 }
 interface S {
 
@@ -176,7 +168,7 @@ const mapStateToProps = (state: any) => {
 };
 const mapDispatchToProps = (dispatch: any) => {
   return {
-    onAdd: (seat: any) => dispatch(addSeat(seat)),
+    onAdd: (seat: ISeat) => dispatch(addSeat(seat)),
     onRemove: (id: string) => dispatch(removeSeat(id)),
   };
 };

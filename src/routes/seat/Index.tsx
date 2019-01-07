@@ -2,24 +2,16 @@ import * as React from 'react';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import seatsSelect from './reducers';
+import { ISeat } from './interface';
 
 import MovieInfo from './components/MovieInfo';
 import SeatSelected from './components/SeatSelected';
 import SeatSelector from './container/SeatSelector';
 import './Index.scss';
 
-type Seat = {
-  id: string;
-  counter: number;
-  colIndex: number;
-  xPos: number;
-  isSold: boolean;
-  rowIndex: number;
-  yPos: number;
-};
 interface P {}
 interface S {
-  selectedSeat: Array<Seat>,
+  selectedSeat: Array<ISeat>,
 }
 
 let store = createStore(seatsSelect);

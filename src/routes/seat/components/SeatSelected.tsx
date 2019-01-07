@@ -1,10 +1,12 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
+import { ISeat } from '../interface';
 import { removeSeat } from '../actions';
+
 import './SeatSelected.scss';
 
 interface P {
-  data: Array<any>,
+  data: Array<ISeat>,
   onRemove: (id: string) => void,
 }
 const SeatSelected = ({data, onRemove}: P) => {
