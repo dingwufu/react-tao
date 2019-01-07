@@ -9,7 +9,13 @@ interface CPState {
   isCollapse: boolean,
   isNeedCollapse: boolean
 }
-
+/**
+ * CollapsiblePara, 折叠文本
+ * @param {number} height - 折叠时段落的高度
+ * @param {number | string} lineHeight - 文本单行行高
+ * @description 有状态组件
+ * @author dingwf
+ */
 class CollapsiblePara extends React.Component<CPProps, CPState> {
   static defaultProps: CPProps;
   private myRef: React.RefObject<HTMLDivElement>;

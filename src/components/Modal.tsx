@@ -6,7 +6,6 @@ const modalRoot = document.getElementById('modal-root') || '';
 interface P {
   children ?: React.ReactNode,
 }
-
 class Modal extends React.Component<P> {
   private el: HTMLDivElement;
   constructor(props: P) {

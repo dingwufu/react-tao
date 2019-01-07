@@ -2,8 +2,11 @@ import * as React from 'react';
 import './Star.scss';
 
 /**
- * desc: 星星评分组件
- * props: value 评分/十分制 size 星星大小
+ * Star, 星星评分
+ * @param {number} value - 评分/十分制.
+ * @param {number} size - 星星大小.
+ * @description 无状态组件
+ * @author dingwf
  */
 interface Star {
   value: number,
