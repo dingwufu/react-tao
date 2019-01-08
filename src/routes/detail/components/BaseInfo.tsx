@@ -14,7 +14,7 @@ const BaseInfo = ({ onShowImage }: P) => {
         <div className="other">中欧大陆 | 20分钟</div>
         <div className="other">2018年2月上映</div>
       </div>
-      <div className="poster" style={{ backgroundImage: 'url(/source/movie/asset4.jpeg)', }} onClick={onShowImage} />
+      <div className="poster" style={{ backgroundImage: 'url(./source/movie/asset4.jpeg)', }} onClick={onShowImage} />
     </div>
   );
 };

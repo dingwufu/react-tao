@@ -30,22 +30,22 @@ class ImageSlider extends React.Component<P, S> {
         <div className="image-slider-wrap" onClick={e => e.stopPropagation()}>
           <Slider {...setting}>
             <div className="item">
-              <img src="/source/image/asset1.jpeg" alt=""/>
+              <img src="./source/image/asset1.jpeg" alt=""/>
             </div>
             <div className="item">
-              <img src="/source/image/asset2.jpeg" alt=""/>
+              <img src="./source/image/asset2.jpeg" alt=""/>
             </div>
             <div className="item">
-              <img src="/source/image/asset3.jpeg" alt=""/>
+              <img src="./source/image/asset3.jpeg" alt=""/>
             </div>
             <div className="item">
-              <img src="/source/image/asset4.jpeg" alt=""/>
+              <img src="./source/image/asset4.jpeg" alt=""/>
             </div>
             <div className="item">
-              <img src="/source/image/asset5.jpeg" alt=""/>
+              <img src="./source/image/asset5.jpeg" alt=""/>
             </div>
             <div className="item">
-              <img src="/source/image/asset6.jpeg" alt=""/>
+              <img src="./source/image/asset6.jpeg" alt=""/>
             </div>
           </Slider>
         </div>

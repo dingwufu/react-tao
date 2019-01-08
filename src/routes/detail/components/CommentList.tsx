@@ -21,7 +21,7 @@ const CommentList = ({data, onClickZan}: P) => {
       {data.map(({id, name, score, content, time, isZan, zan}) => (
         <li key={id} className="comment-item">
           <div className="comment-user">
-            <div className="avatar" style={{ backgroundImage: 'url(/source/default-avatar.jpg)', }} />
+            <div className="avatar" style={{ backgroundImage: 'url(./source/default-avatar.jpg)', }} />
             <div className="user-detail">
               <div className="name">{name}</div>
               <div className="score">
