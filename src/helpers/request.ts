@@ -1,5 +1,5 @@
 export default async function (path: string, opt?: Object) {
-  const url = 'https://www.easy-mock.com/mock/5a964cffdd997801d1e291fe/movie' + path;
+  const url = 'https://www.easy-mock.com/mock/5c33ffed55d45d5684fb42eb/movie' + path;
   const options = Object.assign({
     method: 'GET',
   }, opt);
