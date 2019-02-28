@@ -11,3 +11,6 @@ ReactDOM.render(
   document.getElementById('app-root') as HTMLElement
 );
 registerServiceWorker();
+
+// TODO
+document.cookie = '111';
