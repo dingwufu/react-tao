@@ -12,5 +12,5 @@ ReactDOM.render(
 );
 registerServiceWorker();
 
-// TODO
+// TODO: 测试代码需移除
 document.cookie = '111';
